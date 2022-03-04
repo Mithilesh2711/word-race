@@ -36,3 +36,193 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
+
+
+
+
+.play-btn{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  width:82.5 vw;
+  height:80vh;
+  background:#efeeee;
+  display:grid;
+  place-items:center;
+}
+
+.fas{
+  display:grid;
+  place-items:center;
+  cursor:pointer;
+  padding:4rem;
+  background:#efeeee;
+  border-radius:100%;
+  transition:all 0.3s ease-in;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.1),
+    -10px -10px 10px rgba(255,255,255,0.6);
+  display:grid;
+  place-items:center;
+  font-size:4rem;
+  color:gray;
+}
+.play-btn:active{
+  box-shadow: inset 10px 10px 10px rgba(0,0,0,0.1),
+    inset -10px -10px 10px rgba(255,255,255,0.6);
+}
+.play-btn:active .fas{
+  color:#721efa;
+}
+
+.play-font {
+  font-family: "Lucida Handwriting";
+  font-size: 70px;
+}
+
+
+.title {
+  font-style: "Lucida Handwriting";
+}
+
+.play-link {
+  color: #d3b0b0;
+  text-decoration: none;
+}
+
+meter{
+  width: 80%;
+  height: 40%;
+}
+
+meter::-webkit-meter-optimum-value {
+  background: rgb(192, 9, 9); /* Green */
+}
+
+meter::-webkit-meter-bar{
+  background: green;
+}
+
+
+.score-font {
+  font-family:'Times New Roman', Times, serif;
+  font-size: 20px;
+  padding: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+
+  background-image: linear-gradient(to top, #cfb8b8 0%, #f3f3d9 100%);
+}
+
+.keyboard {
+  justify-content: center;
+  display:grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(19, 1fr);
+  width: 800px;
+}
+
+.key {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 2;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+
+  font: 18px/1.5 "Space Mono", monospace;
+
+  background-color: #f4f5f6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.key:hover {
+  background-color: #fff;
+}
+
+.span-3 {
+  grid-column: span 3;
+}
+
+.span-4 {
+  grid-column: span 4;
+}
+
+.span-5 {
+  grid-column: span 5;
+}
+
+.span-14 {
+  grid-column: span 14;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.border-none {
+  border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+.modal-center {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(5px);
+   background-color: #b8ca8d70;
+}
